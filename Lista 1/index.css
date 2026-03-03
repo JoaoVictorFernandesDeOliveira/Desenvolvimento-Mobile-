@@ -1,0 +1,93 @@
+/* Definição de Variáveis - Requisito da Questão 2 */
+:root {
+    --cor-primaria: #1A237E;
+    --cor-destaque: #2979FF;
+    --cor-fundo: #F5F7FA;
+    --cor-texto: #333333;
+    --cor-branca: #FFFFFF;
+    --transicao: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* Menu de Navegação Funcional com Flexbox */
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transicao); /* Efeito de transição */
+}
+
+/* Efeito Hover nos Links - Requisito */
+nav a:hover {
+    color: var(--cor-destaque);
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Projetos em Formato de Card - Requisito */
+.card-projeto {
+    background-color: var(--cor-branca);
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid var(--cor-primaria);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Responsividade: Ajuste para Desktop */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+body.dark-mode {
+    --cor-fundo: #121212;
+    --cor-texto: #ffffff;
+    --cor-branca: #1e1e1e;
+}

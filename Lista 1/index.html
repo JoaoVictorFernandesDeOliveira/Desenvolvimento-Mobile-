@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+       
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Portfólio</title>
+    </head>
+    <body>
+        <div class="app">
+            <header>
+                <h1>Portfólio | João Victor Fernandes </h1>
+                <nav>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <main>
+                <section id="sobre">
+                    <h2>Sobre Mim</h2>
+                    <p>Olá! Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>. Atualmente, estou cursando a disciplina de <strong>Desenvolvimento Mobile</strong>, onde foco no aprendizado de tecnologias híbridas como o Apache Cordova.</p>
+                </section>
+            
+                <section id="projetos">
+                    <h2>Meus Projetos</h2>
+                    <div id="lista-projetos">
+                        <div id="lista-projetos">
+                        </div>
+                </section>
+            
+                <section id="contato">
+                    <h2>Contato</h2>
+                    <p>Sinta-se à vontade para entrar em contato e conhecer mais sobre meus estudos na área de sistemas.</p>
+                </section>
+                <button id="alternar-tema">Modo Escuro</button>
+            </main>
+            
+            <footer>
+                <p>&copy; 2026 - Estudante de ADS | Desenvolvimento Mobile</p>
+            </footer>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
